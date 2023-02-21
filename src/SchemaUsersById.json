@@ -1,53 +1,52 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "array",
-  "items": [
-    {
+  "type": "object",
+  "properties": {
+    "data": {
       "type": "object",
       "properties": {
-        "actor": {
+        "id": {
+          "type": "integer"
+        },
+        "email": {
           "type": "string"
         },
-        "applicationId": {
+        "first_name": {
           "type": "string"
         },
-        "createdDate": {
+        "last_name": {
           "type": "string"
         },
-        "errorCode": {
-          "type": "string"
-        },
-        "errorMessage": {
-          "type": "string"
-        },
-        "frontDescription": {
-          "type": "string"
-        },
-        "operationName": {
-          "type": "string"
-        },
-        "systemCode": {
-          "type": "string"
-        },
-        "updatedDate": {
-          "type": "string"
-        },
-        "uuid": {
+        "avatar": {
           "type": "string"
         }
       },
       "required": [
-        "actor",
-        "applicationId",
-        "createdDate",
-        "errorCode",
-        "errorMessage",
-        "frontDescription",
-        "operationName",
-        "systemCode",
-        "updatedDate",
-        "uuid"
+        "id",
+        "email",
+        "first_name",
+        "last_name",
+        "avatar"
+      ]
+    },
+    "support": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "text"
       ]
     }
+  },
+  "required": [
+    "data",
+    "support"
   ]
 }
