@@ -12,5 +12,6 @@
     <orderEntry type="library" name="rest-assured-master" level="project" />
     <orderEntry type="library" name="io.rest.assured.json.path" level="project" />
     <orderEntry type="library" name="io.rest.assured" level="project" />
+    <orderEntry type="library" name="jayway.restassured.json.schema.validator" level="project" />
   </component>
 </module>

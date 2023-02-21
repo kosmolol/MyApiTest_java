@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "actor": {
+          "type": "string"
+        },
+        "applicationId": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "errorCode": {
+          "type": "string"
+        },
+        "errorMessage": {
+          "type": "string"
+        },
+        "frontDescription": {
+          "type": "string"
+        },
+        "operationName": {
+          "type": "string"
+        },
+        "systemCode": {
+          "type": "string"
+        },
+        "updatedDate": {
+          "type": "string"
+        },
+        "uuid": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "actor",
+        "applicationId",
+        "createdDate",
+        "errorCode",
+        "errorMessage",
+        "frontDescription",
+        "operationName",
+        "systemCode",
+        "updatedDate",
+        "uuid"
+      ]
+    }
+  ]
+}
