@@ -13,5 +13,6 @@
     <orderEntry type="library" name="io.rest.assured.json.path" level="project" />
     <orderEntry type="library" name="io.rest.assured" level="project" />
     <orderEntry type="library" name="jayway.restassured.json.schema.validator" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.7.2" level="project" />
   </component>
 </module>
