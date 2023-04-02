@@ -9,15 +9,36 @@ class Main{
                 tiger.display();
 
                 Animal duck = new Animal("Утка", "Утя", 3, 5.8, true, true, true);
-                duck.holiday(5);
-                duck.rename("Утя-Утя");
                 duck.display();
-                System.out.println(duck.getAge());
-                System.out.println(duck.getName());
-                System.out.println(duck.getWeight());
-                System.out.println(duck.getType());
-                System.out.println(duck.isSwim());
-                System.out.println(duck.isWalk());
-                System.out.println(duck.isFly());
+
+                Bird b = new Bird();
+                b.setName("Bob");
+                b.display();
+                b.setArea("На югах");
+                b.setWinterFly(false);
+                System.out.println(b.getArea());
+                System.out.println(b.isWinterFly());
+                b.chikChirik();
+
+                Fish f = new Fish();
+                f.setName("Сельд");
+                f.display();
+                f.setSquama("Крупная");
+                f.setUpStreamSwim(true);
+                System.out.println(f.getSquama());
+                System.out.println(f.isUpStreamSwim());
+                f.bul_bul();
+
+                Insect i = new Insect();
+                i.setName("Жук Жукыч");
+                i.display();
+                i.setWingCount(4);
+                i.setLikeJesus(true);
+                System.out.println(i.getWingCount());
+                System.out.println(i.isLikeJesus());
+                i.ggggg();
+
         }
+
+
 }

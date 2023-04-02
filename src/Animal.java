@@ -29,6 +29,7 @@ public class Animal {
       this.age = age;
 
     }
+    public   Animal(){};
 
    public String getType(){
       return type;
@@ -105,9 +106,23 @@ public class Animal {
    }
 
 
-   public void holiday (int col_holiday){
-       weight = weight + col_holiday * 0.1 ;
+   public void holiday (){
+       weight = weight + 0.1;
+       weight = Math.ceil(weight*100)/100;
    }
 
+    public void holiday(double m) {
+      weight+=m;
+        weight = Math.ceil(weight*100)/100;
+    }
 
+    public void holiday(double m, int n) {
+        weight = weight + (n * m);
+        weight = Math.ceil(weight*100)/100;
+    }
 }
+
+
+
+
+
