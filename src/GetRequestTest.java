@@ -31,6 +31,7 @@ public class GetRequestTest {
         RestAssured.given()
                 .spec(Specifications.requestSpecification())//---> Указание RequestSpecification для формирования request
                 .get("/api/users/2")//---> Endpoint для выполнения запроса GET
+
                 .then()
                 .statusCode(HttpStatus.SC_OK)//---> Проверка статус код
                 .assertThat()

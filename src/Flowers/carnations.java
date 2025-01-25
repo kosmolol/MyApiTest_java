@@ -1,6 +1,6 @@
 package Flowers;
 
-public class carnations extends Flowers{
+/*public class carnations extends Flowers{
 
     private String colour;
     private String sort;
@@ -30,4 +30,4 @@ public class carnations extends Flowers{
     }
 
 
-}
+} */

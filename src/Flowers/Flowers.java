@@ -1,11 +1,11 @@
 package Flowers;
 
-public class Flowers {
+public abstract class Flowers {
 
     private String manufactyredCountry;
     private int shelfLife;
-    private double price;
-    private static int soldCount;
+    private final String name;
+
 
     public String getManufactyredCountry() {
         return manufactyredCountry;
@@ -15,9 +15,7 @@ public class Flowers {
         return shelfLife;
     }
 
-    public double getPrice() {
-        return price;
-    }
+
 
     public void setManufactyredCountry(String manufactyredCountry) {
         this.manufactyredCountry = manufactyredCountry;
@@ -27,20 +25,21 @@ public class Flowers {
         this.shelfLife = shelfLife;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
-    public Flowers (String manufactyredCountry, int shelfLife, double price ){
+
+    public Flowers (String manufactyredCountry, int shelfLife, String name){
         this.manufactyredCountry=manufactyredCountry;
-        this.price=price;
+
         this.shelfLife=shelfLife;
 
+        this.name = name;
     }
 
-    public Flowers(){}
+    public Flowers(String name){
+        this.name = name;
+    }
 
-
-
-
+    public String getName() {
+        return name;
+    }
 }
